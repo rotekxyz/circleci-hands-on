@@ -26,7 +26,8 @@ jobs:
       - image: cimg/node:18.14.0
     steps:
       - checkout
-      - node/install-packages
+     # - node/install-packages
+      - run: npm install
       - run: npm run test:ci 
 
 # Invoke jobs via workflows
